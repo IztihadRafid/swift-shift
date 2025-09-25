@@ -1,10 +1,10 @@
 import img1 from "../../../assets/safe-delivery.png"
 import img2 from "../../../assets/tiny-deliveryman.png"
-import img3 from "../../../assets/customer-top.png"
+import img3 from "../../../assets/live-tracking.png"
 const Benefits = () => {
     return (
         <div className="flex flex-col gap-6 my-10">
-            <div className="hero bg-gray-200  lg:w-full md:w-full w-96 mx-auto">
+            <div data-aos="fade-right" className="hero bg-gray-200  lg:w-full md:w-full w-80 mx-auto">
                 <div className="hero-content bg-white flex-col lg:flex-row rounded-3xl">
                     <img src={img1} className=" rounded-lg w-[200px] h-[200px]" alt="benefit image" />
                     <div className="divider divider-horizontal "></div>
@@ -19,7 +19,7 @@ const Benefits = () => {
             </div>
 
 
-            <div className="hero bg-gray-200   lg:w-full md:w-full w-96 mx-auto">
+            <div data-aos="fade-left" className="hero bg-gray-200   lg:w-full md:w-full w-80 mx-auto">
                 <div className="hero-content bg-white flex-col lg:flex-row rounded-3xl">
                     <img src={img2} className=" rounded-lg  w-[200px] h-[200px]" alt="image" />
                     <div className="divider divider-horizontal "></div>
@@ -36,7 +36,7 @@ const Benefits = () => {
 
 
 
-            <div className="hero bg-gray-200   lg:w-full md:w-full w-96 mx-auto">
+            <div data-aos="fade-right" className="hero bg-gray-200   lg:w-full md:w-full w-80 mx-auto">
                 <div className="hero-content bg-white flex-col lg:flex-row rounded-3xl">
                     <img src={img3} className=" rounded-lg  w-[200px] h-[180px]" alt="image" />
                     <div className="divider divider-horizontal "></div>

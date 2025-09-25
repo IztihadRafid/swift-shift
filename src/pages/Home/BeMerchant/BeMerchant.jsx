@@ -3,8 +3,8 @@ const BeMerchant = () => {
     return (
         <div>
             <div className="hero "  data-aos="zoom-in">
-                <div className="hero-content bg-[url(assets/be-a-merchant-bg.png)] bg-no-repeat flex-col lg:flex-row-reverse bg-[#03373D] md:w-4xl w-96 lg:w-[1100px] rounded-4xl p-20 mb-16">
-                    <img src={location} alt="location image" className="max-w-sm rounded-lg "   />
+                <div className="hero-content bg-[url(assets/be-a-merchant-bg.png)] bg-no-repeat flex-col lg:flex-row-reverse bg-[#03373D] md:w-4xl w-80 lg:w-[1100px] rounded-4xl p-20 mb-16">
+                    <img src={location} alt="location image" className="max-w-sm rounded-lg lg:w-full w-[200px]"   />
                     <div>
                         <h1 className="text-4xl font-bold text-white">Merchant and Customer Satisfaction is Our First Priority</h1>
                         <p className="py-6 text-gray-300">

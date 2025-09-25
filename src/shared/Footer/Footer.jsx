@@ -1,18 +1,22 @@
 import React from 'react';
 import ProFastLogo from '../ProFastLogo/ProFastLogo';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-black text-primary-content p-10">
             <aside>
                 <ProFastLogo></ProFastLogo>
-                <p className="font-bold">
-                    ACME Industries Ltd.
-                    <br />
-                    Providing reliable tech since 1992
-                </p>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+                <p className='text-gray-300 w-80 lg:w-[810px] lg:mx-auto'>Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.</p>
             </aside>
+            <ul className='lg:flex  justify-evenly items-center gap-6 text-lg'>
+                <li><Link to={'/'}>Services</Link></li>
+                <li><Link to={'/'}>Coverage</Link></li>
+                <li><Link to={'/about'}>About Us</Link></li>
+                <li><Link to={'/'}>Pricing</Link></li>
+                <li><Link to={'blog'}>Blog</Link></li>
+                <li><Link to={'/contact'}>Contact</Link></li>
+            </ul>
             <nav>
                 <div className="grid grid-flow-col gap-4">
                     <a>

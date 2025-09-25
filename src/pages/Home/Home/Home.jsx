@@ -1,7 +1,9 @@
+import Accordian from "../Accordian/Accordian";
 import Banner from "../Banner/Banner";
 import BeMerchant from "../BeMerchant/BeMerchant";
 import Benefits from "../Benefits/Benefits";
 import ClientLogosMarquee from "../ClientLogosMarquee/ClientLogosMarquee";
+import CustomersFeedback from "../CustomersFeedback/CustomersFeedback";
 import Services from "../Service/Services/Services";
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
       <Benefits></Benefits>
       <div className="divider mb-20"></div>
       <BeMerchant></BeMerchant>
+      <CustomersFeedback></CustomersFeedback>
+      <Accordian></Accordian>
     </div>
   );
 };
