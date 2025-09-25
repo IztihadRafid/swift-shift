@@ -13,7 +13,7 @@ import user2 from "../../../assets/user2.png"
 const CustomersFeedback = () => {
     return (
         <div>
-            <div className=" w-80 md:w-[832px] mx-auto">
+            <div className=" w-80 md:w-[680px] mx-auto">
                 <div className="flex justify-center items-center"><img className="  w-[250px] " src={image} alt="image" /></div>
                 <h1 className="text-center text-2xl md:text-3xl font-bold text-[#03373D] my-5">What our customers are sayings</h1>
                 <p className="text-center text-gray-600 my-5">Enhance posture, mobility, and well-being effortlessly with Posture Pro. Achieve proper alignment, reduce pain, and strengthen your body with ease!</p>

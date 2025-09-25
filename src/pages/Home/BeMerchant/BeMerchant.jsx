@@ -3,8 +3,8 @@ const BeMerchant = () => {
     return (
         <div>
             <div className="hero "  data-aos="zoom-in">
-                <div className="hero-content bg-[url(assets/be-a-merchant-bg.png)] bg-no-repeat flex-col lg:flex-row-reverse bg-[#03373D] md:w-4xl w-80 lg:w-[1100px] rounded-4xl p-20 mb-16">
-                    <img src={location} alt="location image" className="max-w-sm rounded-lg lg:w-full w-[200px]"   />
+                <div className="hero-content bg-[url(assets/be-a-merchant-bg.png)] bg-no-repeat flex-col lg:flex-row-reverse bg-[#03373D] md:w-[680px] w-80 mx-auto lg:w-[1020px] rounded-4xl p-20 mb-16">
+                    <img src={location} alt="location image" className="rounded-lg lg:w-[1024px] w-[200px] md:w-[400px]"   />
                     <div>
                         <h1 className="text-4xl font-bold text-white">Merchant and Customer Satisfaction is Our First Priority</h1>
                         <p className="py-6 text-gray-300">
@@ -12,7 +12,6 @@ const BeMerchant = () => {
                         </p>
                         <button className="px-8 py-4 font-bold hover:bg-lime-500 hover:text-white bg-[#CAEB66] text-[#03373D] rounded-4xl md:mr-3 mb-3 md:mb-0">Become a Merchant</button>
                         <button className="btn btn-outline px-8 py-7 font-bold hover:bg-lime-500 hover:text-white  text-[#CAEB66] rounded-4xl">Earn with Profast Courier</button>
-                        
                     </div>
                 </div>
             </div>

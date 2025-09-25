@@ -5,8 +5,11 @@ import ProFastLogo from "../ProFastLogo/ProFastLogo";
 const Navbar = () => {
     const navItems = <>
     
-    <li><NavLink>Home</NavLink></li>
-    <li><NavLink>About us</NavLink></li>
+    <li><NavLink to="/">Home</NavLink></li>
+    <li><NavLink to="/services">Services</NavLink></li>
+    <li><NavLink>Coverage</NavLink></li>
+    <li><NavLink>Pricing</NavLink></li>
+    <li><NavLink>Be Rider</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm rounded-3xl mb-5 p-2">
@@ -29,7 +32,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <button className="btn bg-slate-300 px-8 py-4 rounded-4xl">Sign In</button>
+                <button className="btn bg-[#CAEB66] px-8 py-4 rounded-4xl">Be a Rider</button>
             </div>
         </div>
     );

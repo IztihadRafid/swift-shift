@@ -9,19 +9,22 @@ import logo7 from "../../../assets/brands/start.png"
 const ClientLogosMarquee = () => {
     const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7]
     return (
-        <section className="py-8 lg:w-[1200px] md:w-[720px] w-96 mx-auto">
-            <div className="md:max-w-7xl  mx-auto px-4">
-            <h1 className="text-2xl font-bold text-center mb-6">We've helped thousands of sales teams</h1>
+        <section className="py-8 lg:w-[1010px] md:w-[520px] w-96 mx-auto">
+            <div className="  mx-auto px-4">
+                <h1 className="text-2xl font-bold text-center mb-6">We've helped thousands of sales teams</h1>
             </div>
-              <Marquee >
+            <div className="lg:w-[1010px] md:w-[400px] w-[250px] mx-auto">
+                <Marquee >
                     {
-                        logos.map((logo,idx)=>(
+                        logos.map((logo, idx) => (
                             <div key={idx} className="flex items-center mx-8 h-24">
                                 <img src={logo} alt="brand logo" />
                             </div>
                         ))
                     }
                 </Marquee>
+            </div>
+
         </section>
     );
 };
