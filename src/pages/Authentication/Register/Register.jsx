@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form"
 import { Link } from "react-router";
 import useAuth from "../../../hooks/useAuth";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 
 
@@ -23,7 +24,7 @@ const Register = () => {
 
     return (
         <div>
-            <div className="mb-10 lg:mr-20 ">
+            <div className="lg:mb-10 md:mb-6 mb-2 lg:mr-25 ">
                 <h1 className="lg:text-5xl md:text-3xl text-2xl text-[#03373D] font-bold">Create an Account</h1>
                 <p className="text-lg text-[#03373D]">Register with Profast</p>
             </div>
@@ -60,7 +61,8 @@ const Register = () => {
 
 
                     <button className="px-7 py-3 font-bold hover:bg-lime-500 hover:text-white bg-[#CAEB66] text-[#03373D] rounded-xl md:mr-3 mb-3 md:mb-0">Register</button>
-                    <p className="mt-5 text-[15px]">Already Have Account? <Link to={'/login'} className="  font-semibold text-[#1f9408]">Login</Link></p>
+                    <p className="lg:mt-5 md:mt-2 mt-2 text-[15px]">Already Have Account? <Link to={'/login'} className="  font-semibold text-[#1f9408]">Login</Link></p>
+                    <SocialLogin></SocialLogin>
                 </fieldset>
             </form>
         </div>

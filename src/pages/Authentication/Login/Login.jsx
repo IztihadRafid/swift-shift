@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 import { Link } from "react-router";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 
 const Login = () => {
@@ -10,7 +11,7 @@ const Login = () => {
     return (
 
         <div>
-            <div className="mb-10 lg:mr-25 ">
+            <div className="lg:mb-10 md:mb-6 mb-2 lg:mr-25 ">
                 <h1 className="lg:text-5xl md:text-3xl text-2xl text-[#03373D] font-bold">Welcome Back</h1>
                 <p className="text-lg text-[#03373D]">Login with Profast</p>
             </div>
@@ -36,7 +37,9 @@ const Login = () => {
 
                     <div><a className="link link-hover">Forgot password?</a></div>
                     <button className="px-7 py-3 font-bold hover:bg-lime-500 hover:text-white bg-[#CAEB66] text-[#03373D] rounded-xl md:mr-3 mb-3 md:mb-0">Login</button>
-                    <p className="mt-5 text-[15px]">Don`t Have any Account? <Link to={'/register'} className="  font-semibold text-[#1f9408]">Register</Link></p>
+                    <p className="lg:mt-5 md:mt-2 mt-2 text-[15px]">Don`t Have any Account? <Link to={'/register'} className="  font-semibold text-[#1f9408]">Register</Link></p>
+                    <div className="divider"></div>
+                    <SocialLogin></SocialLogin>
                 </fieldset>
             </form>
         </div>
