@@ -1,5 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
+/* @theme{
+  --color-primary-dark:#0c031c;
+  --color-text-dark: #08c922;
+  --bg-nav-dark:#0c0833;
+} */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 .font-urbanist{
   font-family: "Urbanist", sans-serif;
