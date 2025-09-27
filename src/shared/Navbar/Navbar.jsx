@@ -4,12 +4,15 @@ import ProFastLogo from "../ProFastLogo/ProFastLogo";
 
 const Navbar = () => {
     const navItems = <>
-    
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/services">Services</NavLink></li>
-    <li><NavLink>Coverage</NavLink></li>
-    <li><NavLink>Pricing</NavLink></li>
-    <li><NavLink>Be Rider</NavLink></li>
+
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/services">Services</NavLink></li>
+        <li><NavLink to={'/coverage'}>Coverage</NavLink></li>
+        <li><NavLink to={'/tracktorder'}>Track Order</NavLink></li>
+        <li><NavLink>Pricing</NavLink></li>
+        <li><NavLink>Be Rider</NavLink></li>
+        <li className="md:hidden"> <NavLink to="/login" className={({ isActive }) => (isActive ? 'text-blue-500' : '')}>Sign In</NavLink>
+      </li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm rounded-3xl mb-5 p-2">
@@ -20,21 +23,29 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                       {navItems}
+                        className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow bg-[#CAEB66] text-gray-700">
+                        {navItems}
                     </ul>
                 </div>
-                <ProFastLogo></ProFastLogo> 
+                <ProFastLogo></ProFastLogo>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                   {navItems}
+                    {navItems}
                 </ul>
             </div>
-            <div className="navbar-end">
-              
+            <div className="navbar-end hidden md:flex space-x-4">
                 <Link to={'/login'} className="btn bg-slate-300 px-8 py-4 rounded-4xl">Sign In</Link>
-                <button className="btn bg-[#CAEB66] px-8 py-4 rounded-4xl">Be a Rider</button>
+                <Link to={'/rider'} className="btn bg-[#CAEB66] px-8 py-4 rounded-4xl ">Be a Rider</Link>
+               {/* for mobile screen hidden */}
+                <div className="flex md:hidden flex-col items-center space-y-2 mt-4 w-full">
+                    <Link to="/login" className="btn bg-slate-300 px-8 py-4 rounded-4xl w-full max-w-xs">
+                        Sign In
+                    </Link>
+                    <Link to="/rider" className="btn bg-[#CAEB66] px-8 py-4 rounded-4xl w-full max-w-xs">
+                        Be a Rider
+                    </Link>
+                </div>
             </div>
         </div>
     );
